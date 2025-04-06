@@ -64,14 +64,14 @@ data['Applications_lag_1'] = data['Applications'].shift(1)
 
 data['Cost_rolling_3'] = data['Cost'].rolling(window=3).mean()
 data['Cost_rolling_6'] = data['Cost'].rolling(window=6).mean()
-
+```
 **Why**:
 - Smooths out short-term fluctuations
 - Reveals underlying trends
 - 3-month window: Captures quarterly patterns
 - 6-month window: Captures medium-term trends
 - Reduces impact of outliers or anomalous months
-```
+
 
 #### Performance Metrics
 ```python
@@ -85,13 +85,12 @@ data['Cost_rolling_6'] = data['Cost'].rolling(window=6).mean()
 data['Conversion_Rate'] = data['Lead_ID Count'] / data['Clicks']
 data['Cost_Per_Lead'] = data['Cost'] / data['Lead_ID Count']
 data['CPC'] = data['Cost'] / data['Clicks']
-
+```
 **Why**:
 - Measures marketing efficiency
 - Helps identify ROI patterns
 - Normalizes performance across different spending levels
 - Key indicators for marketing effectiveness
-```
 
 #### Efficiency Metrics
 ```python
@@ -100,13 +99,13 @@ data['CPC'] = data['Cost'] / data['Clicks']
   
 data['Lead_Quality_Score'] = data['Applications'] / data['Lead_ID Count']
 data['Cost_Efficiency'] = data['Applications'] / data['Cost']
-
+```
 **Why**:
 - Measures lead quality beyond quantity
 - Tracks cost effectiveness in generating quality leads
 - Helps optimize for applications, not just lead volume
 - Important for budget allocation decisions
-```
+
 
 #### Combined Impact
 The enriched feature set provides:
