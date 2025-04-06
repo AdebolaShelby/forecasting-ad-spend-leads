@@ -4,7 +4,7 @@
 
 This project uses historical data to forecast monthly ad spend (Cost) and generated leads for the year 2025. The analysis incorporates advanced feature engineering and machine learning models to provide accurate predictions. The results are visualized in a combined bar and line chart to illustrate the distribution of forecasted costs and leads.
 
-![Forecast Visualization](Forecasting-adspend-leads.ipynb)
+![Forecast Visualization](Resources/forecasted_monthly_costs_and_leads.png)
 
 ## Key Predictions for 2025
 - Average Monthly Cost: $35,647.24
